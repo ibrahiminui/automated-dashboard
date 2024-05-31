@@ -1,0 +1,48 @@
+
+dashboard:
+  name: Dashboard-Test
+
+# latency: Defines the latency group
+Group:
+    - chart_name: latency
+      chart_type: group
+ 
+ # Defines charts that use metrics filter with under the latency group 
+Metrics:
+    - chart_name: response-rate
+      metric: psa-main-prd1-response-rate
+      chart_type: line
+    - chart_name: latency-data
+      metric: psa-main-prd1-latency-data
+      chart_type: line
+
+
+
+# traffic: Defines the traffic group
+Group:
+    - chart_name: traffic
+      chart_type: group
+
+ # Defines charts that use metrics filter with under the traffic group
+Metrics:
+    - chart_name: response-rate
+      metric: psa-main-prd1-response-rate
+      chart_type: line
+    - chart_name: latency-data
+      metric: psa-main-prd1-latency-data
+      chart_type: line
+
+
+# saturation: Defines the saturation group
+Group:
+    - chart_name: saturation
+      chart_type: group
+
+Metrics:
+    - chart_name: response-rate
+      metric: psa-main-prd1-response-rate
+      chart_type: line
+    - chart_name: latency-data
+      metric: psa-main-prd1-latency-data
+      chart_type: line
+

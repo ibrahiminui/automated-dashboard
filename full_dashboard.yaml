@@ -1,0 +1,193 @@
+
+dashboard:
+  name: Dashboard-Test
+
+latency:
+    group:
+      - chart_name: latency
+        chart_type: group
+
+    logbased_metrics:
+      - chart_name: response-rate
+        metric: psa-main-prd1-response-rate
+        chart_type: line_chart
+      - chart_name: latency-data
+        metric: psa-main-prd1-latency-data
+        chart_type: line_chart
+
+    other_metrics:
+      - chart_name: cpu-request-cores
+        metric: container/cpu/request_cores
+        chart_type: line_chart
+      - chart_name: cpu-request-utilization
+        metric: container/cpu/request_utilization
+        chart_type: line_chart
+
+    log_analytics_query:
+      - chart_name: la-query1
+        query: la-query
+        chart_type: line_chart
+      - chart_name: la-query2
+        query: la-query2
+        chart_type: line_chart
+
+    mql_query:
+      - chart_name: mql-query1
+        query: mql-query1
+        chart_type: line_chart
+      - chart_name: mql-query2
+        query: mql-query2
+        chart_type: line_chart
+
+    promql_query:
+      - chart_name: promql-query1
+        query: promql-query1
+        chart_type: line_chart
+      - chart_name: promql-query2
+        query: promql-query2
+        chart_type: line_chart
+
+traffic:
+    group:
+      - chart_name: traffic
+        chart_type: group
+
+    logbased_metrics:
+      - chart_name: response-rate
+        metric: psa-main-prd1-response-rate
+        chart_type: line_chart
+      - chart_name: latency-data
+        metric: psa-main-prd1-latency-data
+        chart_type: line_chart
+
+    other_metrics:
+      - chart_name: cpu-request-cores
+        metric: container/cpu/request_cores
+        chart_type: line_chart
+      - chart_name: cpu-request-utilization
+        metric: container/cpu/request_utilization
+        chart_type: line_chart
+
+    log_analytics_query:
+      - chart_name: la-query1
+        query: sql-query
+        chart_type: line_chart
+      - chart_name: la-query2
+        query: sql-query2
+        chart_type: line_chart
+
+    mql_query:
+      - chart_name: mql-query1
+        query: mql-query1
+        chart_type: line_chart
+      - chart_name: mql-query2
+        query: mql-query2
+        chart_type: line_chart
+
+    promql_query:
+      - chart_name: promql-query1
+        query: promql-query1
+        chart_type: line_chart
+      - chart_name: promql-query2
+        query: promql-query1
+        chart_type: line_chart
+
+saturation:
+    group:
+      - chart_name: saturation
+        chart_type: group
+
+    logbased_metrics:
+      - chart_name: response-rate
+        metric: psa-main-prd1-response-rate
+        chart_type: line_chart
+      - chart_name: latency-data
+        metric: psa-main-prd1-latency-data
+        chart_type: line_chart
+
+    other_metrics:
+      - chart_name: cpu-request-cores
+        metric: container/cpu/request_cores
+        chart_type: line_chart
+      - chart_name: cpu-request-utilization
+        metric: container/cpu/request_utilization
+        chart_type: line_chart
+
+    log_analytics_query:
+      - chart_name: la-query1
+        query: sql-query
+        chart_type: line_chart
+      - chart_name: la-query2
+        query: sql-query2
+        chart_type: line_chart
+
+    mql_query:
+      - chart_name: mql-query1
+        query: mql-query1
+        chart_type: line_chart
+      - chart_name: mql-query2
+        query: mql-query2
+        chart_type: line_chart
+
+    promql_query:
+      - chart_name: promql-query1
+        query: promql-query1
+        chart_type: line_chart
+      - chart_name: promql-query2
+        query: promql-query2
+        chart_type: line_chart
+
+logs:
+    group:
+      - chart_name: logs
+        chart_type: group
+
+    logbased_metrics:
+      - chart_name: response-rate
+        log: psa-main-prd1-response-rate
+        chart_type: logs
+      - chart_name: latency-data
+        metric: psa-main-prd1-latency-data
+        chart_type: line_chart
+
+    other_metrics:
+      - chart_name: cpu-request-cores
+        metric: container/cpu/request_cores
+        chart_type: line_chart
+      - chart_name: cpu-request-utilization
+        metric: container/cpu/request_utilization
+        chart_type: line_chart
+
+    log_analytics_query:
+      - chart_name: la-query1
+        query: sql-query
+        chart_type: line_chart
+      - chart_name: la-query2
+        query: sql-query2
+        chart_type: line_chart
+
+    mql_query:
+      - chart_name: mql-query1
+        query: mql-query1
+        chart_type: line_chart
+      - chart_name: mql-query2
+        query: mql-query2
+        chart_type: line_chart
+
+    promql_query:
+      - chart_name: promql-query1
+        query: promql-query1
+        chart_type: line_chart
+      - chart_name: promql-query2
+        query: promql-query2
+        chart_type: line_chart
+
+
+incidents:
+    group:
+      - chart_name: incidents
+        chart_type: group
+      - chart_name: incidents
+        alert: Alert1
+        chart_type: Alerts
+

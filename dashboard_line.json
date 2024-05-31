@@ -1,0 +1,35 @@
+
+  {
+  "tiles_template": {
+      "width": 24,
+      "height": 16,
+      "widget": {
+          "title": "",
+          "xy_chart": {
+              "data_sets": [
+                  {
+                      "time_series_query": {
+                          "time_series_filter": {
+                              "filter": "",
+                              "aggregation": {
+                                  "alignment_period": "60s",
+                                  "per_series_aligner": "ALIGN_COUNT",
+                                  "cross_series_reducer": "REDUCE_COUNT"
+                              }
+                          }
+                      },
+                      "plot_type": "LINE",
+                      "min_alignment_period": "60s",
+                      "target_axis": "Y1"
+                  }
+              ],
+              "y_axis": {
+                  "scale": "LINEAR"
+              },
+              "chart_options": {
+                  "mode": "COLOR"
+              }
+          }
+      }
+  }
+}

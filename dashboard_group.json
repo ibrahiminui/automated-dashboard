@@ -1,0 +1,13 @@
+
+  {
+  "tiles_template":       {
+    "widget": {
+      "title": "",
+      "collapsible_group": {
+        "collapsed": false
+      }
+    },
+    "height": 2,
+    "width": 48
+  }
+}
