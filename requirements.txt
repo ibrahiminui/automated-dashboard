@@ -1,0 +1,4 @@
+pyyaml
+google-cloud-monitoring-dashboards
+google-cloud-storage
+protobuf
