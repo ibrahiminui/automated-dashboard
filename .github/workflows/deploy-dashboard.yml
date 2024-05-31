@@ -35,4 +35,4 @@ jobs:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
 
     - name: Deploy Dashboard
-      run: python deploy_dashboard.py
+      run: python multiple_charts_json_4rm_yaml_by_type_state.py
