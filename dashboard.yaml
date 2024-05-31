@@ -37,5 +37,7 @@ Metrics:
       metric: logging.googleapis.com/user/niis-main-qal1-gce-instance-logs
       resource_type: gce_instance
       chart_type: line
+    - chart_name: logs-error-group
+      chart_type: group
     
 
