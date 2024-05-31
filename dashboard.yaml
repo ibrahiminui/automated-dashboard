@@ -33,5 +33,9 @@ Metrics:
       metric: logging.googleapis.com/user/niis-main-qal1-gce-instance-logs
       resource_type: gce_instance
       chart_type: line
+    - chart_name: golden-signal-system
+      metric: logging.googleapis.com/user/niis-main-qal1-gce-instance-logs
+      resource_type: gce_instance
+      chart_type: line
     
 
