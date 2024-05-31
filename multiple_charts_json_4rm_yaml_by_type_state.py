@@ -139,7 +139,10 @@ def create_or_update_dashboard(project_id, config_file, json_file_line, json_fil
             mosaic_layout=dashboard_structure["mosaic_layout"]
         )
         response = client.create_dashboard(parent=project_name, dashboard=dashboard)
+        dashboard_url = f"https://console.cloud.google.com/monitoring/dashboards/custom/{response.name.split('/')[-1]}?project={project_id}"
         print("Dashboard created: ", response.name)
+        print("Etag: ", response.etag)
+        print("Dashboard URL: ", dashboard_url)
         
         # Save the new dashboard state to GCS
         dashboard_state = {'dashboard_id': response.name.split('/')[-1]}
