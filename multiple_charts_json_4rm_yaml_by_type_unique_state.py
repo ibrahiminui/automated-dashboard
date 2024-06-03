@@ -47,7 +47,7 @@ def create_or_update_dashboard(project_id, config_file, json_file_line, json_fil
     # Load the configuration file
     config = load_config(config_file)
     appcode = config['appcode']
-    display_name = f"{config['dashboard']['name']} - {appcode}"
+    display_name = f"{appcode} - {config['dashboard']['name']}"
     
     # Collect all chart titles, metrics, resource types, and chart types dynamically from the config file
     charts = [(metric['chart_name'], metric.get('metric'), metric.get('resource_type'), metric['chart_type']) for metric in config['Metrics']]
