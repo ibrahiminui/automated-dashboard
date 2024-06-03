@@ -160,4 +160,4 @@ def create_or_update_dashboard(project_id, config_file, json_file_line, json_fil
 project_id = 'staticwebsitegcs'  # replace with your GCP project ID
 bucket_name = 'dashboard_state'  # replace with your GCS bucket name (do not include 'gs://')
 state_file = 'dashboard_state.json'  # the file to store dashboard state
-create_or_update_dashboard(project_id, 'dashboard.yaml', 'dashboard_line.json', 'dashboard_group.json', bucket_name, state_file)
+create_or_update_dashboard(project_id, 'dashboard.yaml', 'automated-dashboard/dashboard_line.json', 'automated-dashboard/dashboard_group.json', bucket_name, state_file)
